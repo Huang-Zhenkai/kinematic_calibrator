@@ -1,0 +1,22 @@
+[project]
+name = "kinematic-calibrator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Zhenkai Huang", email = "1984207929@qq.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "lieink",
+]
+
+[project.scripts]
+kinematic-calibrator = "kinematic_calibrator:main"
+
+[build-system]
+requires = ["uv_build>=0.12.7,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+lieink = { git = "ssh://git@github.com/Huang-Zhenkai/lieink.git" }
